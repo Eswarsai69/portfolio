@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="asserts/iconimage.png">
+    <script src="https://kit.fontawesome.com/0862574793.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="asserts/logoname.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#certs">Certifications</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Java Full Stack Developer</p>
+                <h1>Hi, I'm <span>Lakkoju Eswara Sai</span><br> from India</h1>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="asserts/profileimage.png">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title">About Me</h1>
+                        <p>I love building modern, responsive, and user-friendly web applications using technologies like Java, Spring Boot, and React. I’m passionate about crafting scalable backend systems, designing interactive frontend interfaces, and leveraging development tools to streamline the entire software development lifecycle. My goal is to create high-performance applications that provide real value to users and companies alike.</p>
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('education')">Edcation</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>Java</span><br>Designing Java Based Backend Applications</li>
+                                <li><span>Web Development</span><br>Designing HTML+CSS+JS Websites</li>
+                                <li><span>DSA</span><br>Solving Competitive Problems using DSA</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>06/2024 - 09/2024</span><br>Java Developer Internship at Scholiverse Educare Private Limited</li>
+                                <li><span>04/2024 - 05/2024</span><br>Full Stack Web Development Internship at Skiptronics Consulting Private Limited</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>2021 - 2025</span><br>B.Tech in Computer Science and Engineering at Aditya Institute of Technology and Management</li>
+                                <li><span>2019 - 2021</span><br>Intermediate in MPC at Sri Chaitanya Junior College</li>
+                                <li><span>2018 - 2019</span><br>10th(SSC) at Infant Jesus High School</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="projects">
+        <div class="container">
+            <h1 class="sub-title">My Projects</h1>
+            <div class="projects-list">
+                <div class="project">
+                    <img src="asserts/profilemanagement.png">
+                    <div class="layer">
+                        <h3>Profile Management Application</h3>
+                        <p>This is a React + TypeScript application that allows users to create, view, update, and delete their profile information. It includes form validation, routing, API mocking, localStorage persistence, and global state management using Redux Toolkit.</p>
+                        <a href="https://profile-management-lac.vercel.app/profile-form"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="asserts/rgbcolorgenerator.png">
+                    <div class="layer">
+                        <h3>RGB Color Generator</h3>
+                        <p>A simple web app to generate random RGB colors, preview them, and copy RGB values for use in your projects. Perfect for designers, developers, and artists!</p>
+                        <a href="https://rgb-color-generator-delta.vercel.app/"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="asserts/notebookapp.png">
+                    <div class="layer">
+                        <h3>Note Book App</h3>
+                        <p>A clean, responsive web application for creating and managing notes with local storage persistence.</p>
+                        <a href="https://note-book-app-psi.vercel.app/"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="https://vercel.com/lakkoju-eswara-sais-projects" class="btn">See more</a>
+        </div>
+    </div>
+    <!-- Certifications-->
+    <div id="certs">
+        <div class="container">
+            <h1 class="sub-title">My Certifications</h1>
+            <div class="certs-list">
+                <div>
+                    <i class="fa-solid fa-laptop-code"></i>
+                    <h2>TalentNext course on Java Full Stack</h2>
+                    <p>Successfully completed the TalentNext course on Java Full Stack during the period May to September conducted by Wipro in the year 2024.</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Advanced DSA Live Training Program</h2>
+                    <p>Successfully completed the course on Advanced DSA Live Training Program | GFG </> AITAM of duration 8 weeks.</p>
+                    
+                </div>
+                <div>
+                    <i class="fa-brands fa-java"></i>
+                    <h2>Core Java</h2>
+                    <p>Successfully completed an 8 week online training on Core Java with OOPS, Advanced concepts and Database Handling, Scored 90% in the final assignment and I am the top performer in the training</p>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope"></i> eswarsaiiyer@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>+91 6301660615</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/lakkojueswarasai/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/Eswarsai69"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                    <a href="https://drive.google.com/file/d/1Cf5D7NdxNWwcKka4Z5APVBWLy9HARNHq/view" download class="btn btn2">Download Resume</a>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2"><i class="fa-solid fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright &copy; Eswara Sai. Made with <i class="fa-solid fa-heart"></i> by Easy Tutorials</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
